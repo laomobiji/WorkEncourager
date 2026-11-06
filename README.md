@@ -97,8 +97,17 @@ $script:Milestones = @(
 **Q: 公司自己放假 / 我请假了怎么算？**
 设置面板里的「额外假日」填上日期即可（如 `2026-12-25`）。
 
-**Q: 会被杀毒软件拦吗？**
-脚本为明文 PowerShell，未加壳未联网上传任何数据（仅拉取节假日公开数据），如被误报可加入信任。
+**Q: 会被杀毒软件拦截 / 报毒吗？**
+
+本项目是**明文 PowerShell 脚本，未加壳、未混淆、不联网上传任何数据**（仅拉取节假日公开数据），报毒属于无签名脚本的常见误报。可以做三件事：
+
+1. **一键加白名单（推荐）**：双击仓库里的 `whitelist.bat`，同意 UAC 弹窗即可把程序目录和数据目录加入 Windows Defender 白名单；用 360 / 火绒等第三方杀软的话，在其"信任区 / 白名单"里手动添加程序所在目录
+2. **直接解压后运行**：脚本源码完全可读，可先自行审查再运行
+3. **向厂商申诉误报**，一般 1~3 个工作日处理后全平台不再报毒：
+   - 微软 Defender：[filesubmission](https://www.microsoft.com/en-us/wdsi/filesubmission)（选 Software developer → False positive）
+   - 360：[open.soft.360.cn](http://open.soft.360.cn) ；腾讯电脑管家：[report](https://mSafe.qq.com/report_false_positives.shtml)
+
+> 启动器已刻意避免使用杀软敏感的参数组合（无 `-WindowStyle Hidden`，窗口由 VBS 自身静默启动），误报概率已尽量降低。
 
 **Q: 下班后 / 周末显示什么？**
 非工作时间大字显示「不打工 🏖」或 ¥0.00000，不计时。
