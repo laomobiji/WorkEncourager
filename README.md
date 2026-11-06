@@ -7,9 +7,15 @@
 [![Size](https://img.shields.io/badge/size-~100KB-green)](#)
 [![License](https://img.shields.io/badge/license-MIT-orange)](#)
 
-<!-- 建议在这里放一张运行截图：
-![screenshot](docs/screenshot.png)
--->
+## 📸 界面预览
+
+**主界面** — 实时入账大字、进度条、里程碑卡片、本月累计：
+
+![主界面](docs/screenshot-main.png)
+
+**设置面板** — 所有参数 GUI 直接改，不用碰配置文件：
+
+![设置面板](docs/screenshot-settings.png)
 
 ## ✨ 功能
 
